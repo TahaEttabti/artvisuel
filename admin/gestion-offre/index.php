@@ -100,6 +100,7 @@
                            }else{
                            	echo "Offre déjà vu";
                            } ?></button>    
+                            <a class="btn btn-danger" href="delete.php?ID_Offre=<?= $client['ID_Offre'] ?>" style="margin: -50% 0% -10% 85%;"><i class="fas fa-trash-alt"></i></a>
                         </td>   
                     </tr>   
                     <?php
