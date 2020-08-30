@@ -6,10 +6,9 @@
     $sql = 'SELECT * FROM `liste_galerie`';
 
     $query = $db->prepare($sql);
-
     $query->execute();
-
     $result = $query->fetchAll(PDO::FETCH_ASSOC);
+    
     require_once('../../includes/close.php');
 ?>
 <!DOCTYPE html>
@@ -27,10 +26,13 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="index.php">Gestion Les Galeries <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.php">Gestion les Galeries <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../gestion-artiste/index.php">Gestion Des Artistes</a>
+                <a class="nav-link" href="../gestion-artiste/index.php">Gestion des Artistes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../gestion-offre/index.php">Gestion les Offres</a>
             </li>
             <li class="nav-item">
                 <?php if(!empty($_SESSION)): ?>
@@ -41,7 +43,7 @@
     </nav>
 </header>
 <main class="container">
-    <div class="row">
+    <div class="row" style="margin: auto -13%;">
         <section class="col-12">
             <?php
                 if(!empty($_SESSION['erreur'])){
@@ -59,15 +61,17 @@
                          $_SESSION['message'] = "";
                     }
             ?>
-            <h1>Liste des produits</h1>
+            <h1>Liste des Tableaux</h1>
                 <table class="table table-image">
                     <thead>
                         <th>ID</th>
-                        <th>ID_Artiste</th>
                         <th>Image</th>
                         <th>Nom</th>
                         <th>Size</th>
                         <th>Prix</th>
+                        <th>Support</th>
+                        <th>Année</th>
+                        <th>Référence</th>
                         <th>Actions</th>
                     </thead>
                     <tbody>
@@ -77,11 +81,13 @@
                 ?>
                     <tr>
                         <td><?= $produit['ID'] ?></td>
-                        <td><?= $produit['ID_Artiste'] ?></td>
                         <td class="w-25"><img id="img" src="data:image/jpeg;base64,<?= base64_encode($produit['Image']) ?>" class="img-fluid img-thumbnail"></td>
                         <td><?= $produit['Nom'] ?></td>
                         <td><?= $produit['Size'] ?></td>
-                        <td><?= $produit['Prix'] ?> DH</td>
+                        <td><?= $produit['Prix'] ?></td>
+                        <td><?= $produit['Support'] ?></td>
+                        <td><?= $produit['Annee'] ?></td>
+                        <td><?= $produit['Reference'] ?></td>
                         <td>
                             <a class="btn btn-info" href="details.php?ID=<?= $produit['ID'] ?>"><i class="fas fa-eye"></i></a>
                             <a class="btn btn-success" href="edit.php?ID=<?= $produit['ID'] ?>"><i class="fa fa-edit"></i></a> 

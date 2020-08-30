@@ -42,12 +42,14 @@
             <section class="col-12">
                 <h1>Détails du table <?= $produit['Nom'] ?></h1>
                 <p>ID : <?= $produit['ID'] ?></p>
-                <p>ID : <?= $produit['ID_Artiste'] ?></p>
                 <p>Image : <br><br>
                     <img src="data:image/jpeg;base64,<?= base64_encode($produit['Image']) ?>" width="300"></p>
                 <p>Nom : <?= $produit['Nom'] ?></p>
                 <p>Size : <?= $produit['Size'] ?></p>
                 <p>Prix : <?= $produit['Prix'] ?> DH</p>
+                <p>Support : <?= $produit['Support'] ?></p>
+                <p>Annee : <?= $produit['Annee'] ?></p>
+                <p>Reference : <?= $produit['Reference'] ?></p>
                 <p><a href="index.php">Retour</a> <a href="edit.php?ID=<?= $produit['ID'] ?>">Modifier</a></p>
             </section>
         </div>

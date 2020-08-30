@@ -45,6 +45,7 @@ img#logo {
   list-style-type: none;
   margin: auto;
   text-align: center;
+  font-size: 2.5rem;
 }
 
 .main-navigation a {
@@ -79,7 +80,7 @@ img#logo {
   display: block;
 }
 
-@media screen and (min-width: 505px) {
+@media screen and (min-width: 800px) {
 
   .navigation-menu {
     height: 70px;
@@ -469,6 +470,18 @@ a:hover {
   color: red;
 }
 
+.search {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+}
+
+#btn-search {
+  height: auto;
+  font-size: 15px;
+  padding: 6px;
+}
+
 /****************/
 /* Fin gallery */
 /****************/
@@ -479,9 +492,7 @@ a:hover {
 /***************/
 
 
-.count {
-  margin: auto;
-  padding: 4% 28% 2% 12%;
+.about {
   line-height: 2rem;
   font-size: 1.5rem;
 }
@@ -495,9 +506,6 @@ img.stacked {
   margin: 50px auto;
   width: 95%;
   height: 100%;
-  position: relative;
-  left: 20%;
-  bottom: 4rem;
 }
 
 #img-container:before, #img-container:after {
@@ -531,4 +539,61 @@ img.stacked {
 
 /*************/
 /* Fin About */
+/*************/
+
+/**************/
+/* Debut Resp */
+/**************/
+
+@media  screen and (max-width: 800px) {
+
+  /* .main-navigation li {
+    font-size: 2.5rem;
+  } */
+
+  /* .titreslide {
+    top: 15%;
+  } */
+
+  .display-1 {
+    font-size: 3rem;
+  }
+
+  /* #img-container {
+    top: 0;
+    left: 10%;
+    width: 90%;
+  } */
+
+  .py-3 {
+    margin-left: 18%;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  label {
+    font-size: 1.5rem;
+  }
+
+  .form-control {
+    font-size: 1.5rem;
+  }
+
+  h5, .h5 {
+    font-size: 2rem;
+  }
+
+  .team-role {
+    font-size: 1.5rem;
+  }
+
+}
+
+
+
+
+
+
+/*************/
+/* Fin Resp  */
 /*************/

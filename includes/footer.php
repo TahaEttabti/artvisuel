@@ -5,62 +5,64 @@
     <div class="row text-center text-md-left mt-3 pb-3">
 
       <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold">Company name</h6>
-        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-          consectetur
-          adipisicing elit.</p>
+        <h6 class="text-uppercase mb-4 font-weight-bold">A Propos de Nous</h6>
+        <p>Design and co est dédiée aux artistes résidents marocains et étrangers, et offre aux collectionneurs et amateurs d’art au Maroc un choix varié d’œuvres d’art dans l’air du temps.</p>
+        <p>Les œuvres exposées dans cette galerie à Marrakech touchent aux différentes expressions artistiques, dont la peinture, la sculpture, la photographie, le collage ou encore le recyclage…pour ainsi satisfaire les goûts et aspirations des amoureux de l’art.</p>
       </div>
       <hr class="w-100 clearfix d-md-none">
       <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+        <h6 class="text-uppercase mb-4 font-weight-bold">Menu</h6>
         <p>
-          <a href="#!">MDBootstrap</a>
+          <a href="home.php">Accueil</a>
         </p>
         <p>
-          <a href="#!">MDWordPress</a>
+          <a href="gallery.php">Galerie</a>
         </p>
         <p>
-          <a href="#!">BrandFlow</a>
+          <a href="artiste.php">Artistes</a>
         </p>
         <p>
-          <a href="#!">Bootstrap Angular</a>
+          <a href="about.php">A propos</a>
+        </p>
+        <p>
+          <a href="about.php">Contact</a>
         </p>
       </div>
       <hr class="w-100 clearfix d-md-none">
       <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-        <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+        <h6 class="text-uppercase mb-4 font-weight-bold">Liens utiles</h6>
         <p>
-          <a href="#!">Your Account</a>
+          <a href="https://shop.grosliere.biz/"  target="_blank">Grosliere</a>
         </p>
         <p>
-          <a href="#!">Become an Affiliate</a>
+          <a href="https://aorie.fr/shop-achat-tableaux-peinture-moderne-paypal"  target="_blank">Aorie</a>
         </p>
         <p>
-          <a href="#!">Shipping Rates</a>
+          <a href="https://www.weenart.ma/"  target="_blank">Weenart</a>
         </p>
         <p>
-          <a href="#!">Help</a>
+          <a href="https://www.dalbe.fr/"  target="_blank">Dable</a>
         </p>
       </div>
       <hr class="w-100 clearfix d-md-none">
       <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
         <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
         <p>
-          <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+          <i class="fas fa-home mr-3"></i>26, Rue Riyad Qu Salam Safi, Maroc</p>
         <p>
-          <i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+          <i class="fas fa-envelope mr-3"></i> artvisuel@gmail.com</p>
         <p>
-          <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+          <i class="fas fa-phone mr-3"></i> + 212 6 16 56 88 02</p>
         <p>
-          <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          <i class="fas fa-print mr-3"></i> + 212 5 24 56 88 02</p>
         </div>
     </div>
     <hr>
     <div class="row d-flex align-items-center">
       <div class="col-md-7 col-lg-8">
         <p class="text-center text-md-left">© 2020 Copyright:
-          <a href="https://mdbootstrap.com/">
-            <strong> MDBootstrap.com</strong>
+          <a href="home.php">
+            <strong> Artvisuel</strong>
           </a>
         </p>
       </div>

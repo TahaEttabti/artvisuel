@@ -27,11 +27,14 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <ul class="navbar-nav">
         <li class="nav-item">
-            <a class="nav-link" href="../gestion-galerie/index.php">Gestion Les Galeries </a>
+            <a class="nav-link" href="../gestion-galerie/index.php">Gestion les Galeries </a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="index.php">Gestion Des Artistes <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.php">Gestion des Artistes <span class="sr-only">(current)</span></a>
         </li>
+        <li class="nav-item">
+                <a class="nav-link" href="../gestion-offre/index.php">Gestion les Offres</a>
+            </li>
         <li class="nav-item">
             <?php if(!empty($_SESSION)): ?>
                 <a class="nav-link" href="../logout.php">Deconnecter</a>
@@ -41,7 +44,7 @@
     </nav>
 </header>
 <main class="container">
-    <div class="row">
+    <div class="row" style="margin: auto -13%;">
         <section class="col-12">
             <?php
                 if(!empty($_SESSION['erreur'])){

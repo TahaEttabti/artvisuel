@@ -5,31 +5,37 @@
 
 if($_POST){
     if(isset($_POST['ID']) && !empty($_POST['ID'])
-        && isset($_POST['ID_Artiste']) && !empty($_POST['ID_Artiste'])
         && isset($_POST['Nom']) && !empty($_POST['Nom'])
         && isset($_POST['Size']) && !empty($_POST['Size'])
-        && isset($_POST['Prix']) && !empty($_POST['Prix'])){
+        && isset($_POST['Prix']) && !empty($_POST['Prix'])
+        && isset($_POST['Support']) && !empty($_POST['Support'])
+        && isset($_POST['Annee']) && !empty($_POST['Annee'])
+        && isset($_POST['Reference']) && !empty($_POST['Reference'])){
         // On inclut la connexion à la base
         require_once('../../includes/connexion.php');  
 
         // On nettoie les données envoyées
         $ID = strip_tags($_POST['ID']);
-        $ID_Artiste = strip_tags($_POST['ID_Artiste']);
         $nom = strip_tags($_POST['Nom']);
         $image = file_get_contents($_FILES['Image']['tmp_name']);
         $size = strip_tags($_POST['Size']);
         $prix = strip_tags($_POST['Prix']);
+        $Support = strip_tags($_POST['Support']);
+        $Annee = strip_tags($_POST['Annee']);
+        $Reference = strip_tags($_POST['Reference']);
 
-        $sql = 'UPDATE `liste_galerie` SET `ID_Artiste`=:ID_Artiste, `Nom`=:Nom, `Image`=:Image, `Size`=:Size, `Prix`=:Prix WHERE `ID`=:ID;';
+        $sql = 'UPDATE `liste_galerie` SET `Nom`=:Nom, `Image`=:Image, `Size`=:Size, `Prix`=:Prix, `Support`=:Support, `Annee`=:Annee, `Reference`=:Reference WHERE `ID`=:ID;';
 
         $query = $db->prepare($sql);
 
         $query->bindValue(':ID', $ID, PDO::PARAM_INT);
-        $query->bindValue(':ID_Artiste', $ID_Artiste, PDO::PARAM_INT);
         $query->bindValue(':Nom', $nom, PDO::PARAM_STR);
         $query->bindValue(':Image', $image, PDO::PARAM_STR);
         $query->bindValue(':Size', $size, PDO::PARAM_STR);
         $query->bindValue(':Prix', $prix, PDO::PARAM_STR);
+        $query->bindValue(':Support', $Support, PDO::PARAM_STR);
+        $query->bindValue(':Annee', $Annee, PDO::PARAM_STR);
+        $query->bindValue(':Reference', $Reference, PDO::PARAM_STR);
 
         $query->execute();
 
@@ -91,10 +97,6 @@ if(isset($_GET['ID']) && !empty($_GET['ID'])){
                 <h1>Modifier les données d'un tableau</h1>
                 <form method="post" enctype="multipart/form-data">
                     <div class="form-group">
-                        <label for="ID_Artiste">ID_Artiste</label>
-                        <input type="text" id="ID_Artiste" name="ID_Artiste" class="form-control" value="<?= $produit['ID_Artiste']?>">
-                    </div>
-                    <div class="form-group">
                         <label for="Nom">Nom</label>
                         <input type="text" id="Nom" name="Nom" class="form-control" value="<?= $produit['Nom']?>">
                     </div>
@@ -109,6 +111,18 @@ if(isset($_GET['ID']) && !empty($_GET['ID'])){
                     <div class="form-group">
                         <label for="Prix">Prix</label>
                         <input type="text" id="Prix" name="Prix" class="form-control" value="<?= $produit['Prix']?>">
+                    </div>
+                    <div class="form-group">
+                        <label for="Support">Support</label>
+                        <input type="text" id="Support" name="Support" class="form-control" requried>
+                    </div>
+                    <div class="form-group">
+                        <label for="Annee">Année</label>
+                        <input type="text" id="Annee" name="Annee" class="form-control" requried>
+                    </div>
+                    <div class="form-group">
+                        <label for="Reference">Référence</label>
+                        <input type="number" id="Reference" name="Reference" class="form-control" requried>
                     </div>
                         <input type="hidden" value="<?= $produit['ID']?>" name="ID">
                         <button class="btn btn-primary">Envoyer</button>

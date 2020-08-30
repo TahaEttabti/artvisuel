@@ -3,13 +3,13 @@
     require_once('../includes/header.php');
 ?>
       <h1 class="display-1 special-title" style="text-align: center;">A Propos de Nous</h1>
-      <div class="count">
+      <div class="container about">
         <div class="row para">
             <div class="col-sm-4">
                 <p>Design and co est dédiée aux artistes résidents marocains et étrangers, et offre aux collectionneurs et amateurs d’art au Maroc un choix varié d’œuvres d’art dans l’air du temps.</p>
             </div>
             <div class="col-sm-4">
-                <p>Les œuvres exposées dans cette galerie à Marrakech touchent aux différentes expressions artistiques, dont la peinture, la sculpture, la photographie, le collage ou encore le recyclage…pour ainsi satisfaire les goûts et aspirations des amoureux de l’art.</p>
+                <p id="parag">Les œuvres exposées dans cette galerie à Marrakech touchent aux différentes expressions artistiques, dont la peinture, la sculpture, la photographie, le collage ou encore le recyclage…pour ainsi satisfaire les goûts et aspirations des amoureux de l’art.</p>
                 <br>
                 <p><a href="about.php"><b style="color: wheat;">Lire la suite &gt;&gt;</b></a></p>
             </div>
@@ -93,7 +93,7 @@
             <img class="modal-content" id="img01">
           </div>
 
-
+          <br><br>
           <div class="row mx-auto">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">                        
               <h1 class="display-1 special-title" style="text-align:center;">Les Artistes</h1>
@@ -187,6 +187,7 @@
                         </div>
                       </div>
                   </div> 
+                  <br><br>
                   <div class="text-center" style="margin-bottom: 2%;">
                     <a href="artiste.php">
                        <button class="btn btn-mod btn-border btn-large">Découvrez plus</button>
@@ -194,9 +195,10 @@
                   </div>
                 </div>
           </section>
+          <br><br>
           <div class="row mx-auto">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">                        
-              <h1 class="display-2 special-title" style="text-align: center;">Contactez-Nous</h1>
+              <h1 class="display-1 special-title" style="text-align: center;">Contactez-Nous</h1>
             </div>
           </div>
     

@@ -14,6 +14,24 @@
 
 ?>
 
+<div class="container mt-5">
+  <form action="filter.php" method="POST">
+    <div class="form-row">
+      <div class="col">
+        <input type="text" name="prix" class="form-control" placeholder="Enterer prix">
+      </div>
+      <div class="col">
+        <select id="inputState" name="supp" class="form-control">
+          <option selected>Support...</option>
+          <option>Toile</option>
+          <option>Acrylique</option>
+        </select>
+      </div>
+        <button class="btn btn-mod btn-border " name="sub" id="btn-search" type="submit">Chercher</button>
+    </div>
+  </form>
+</div>
+
 <h1 class="display-1 special-title" style="text-align: center;">Galerie</h1>
 
 <!-- Page Content -->
@@ -42,7 +60,7 @@
       foreach($result as $produit){
     ?>
       <div class="col-lg-3 col-md-4 col-6">
-        <a href="#" class="d-block mb-4 h-100">
+        <a href="tableau.php?tableau=<?php echo $produit['ID'] ?>" class="d-block mb-4 h-100">
           <img src="data:image/jpeg;base64,<?= base64_encode($produit['Image']) ?>" class="img-fluid img-thumbnail" alt="">
           <div class="desc">
             <div><?= $produit['Nom'] ?></div>

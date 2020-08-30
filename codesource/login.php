@@ -16,12 +16,16 @@ if(isset($_POST['submit'])){
     if($rows == 1){
         $check = $res->fetch(PDO::FETCH_ASSOC);
         if($check['roles'] == 'admin'){
+            // $id= $check['idUser'];
             $admin = $check['roles']; 
             $_SESSION['admin']=$admin;
+            // $_SESSION['admid']=$id;
             header('location: ../admin/gestion-galerie/index.php');    
         } else {
-            $client = $check['roles']; 
+            // $id= $check['idUser']; 
+            $client = $check['roles'];
             $_SESSION['user']=$client;
+            // $_SESSION['admid']=$id;
             header('location: home.php'); 
         }    
     } else{
