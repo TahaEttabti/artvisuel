@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{84767168-913B-42B2-9B52-C3AA553732B0}" Label="" LastModificationDate="1598786947" Name="Page_Gestion_Panier" Objects="39" Symbols="33" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
+<?PowerDesigner AppLocale="UTF16" ID="{84767168-913B-42B2-9B52-C3AA553732B0}" Label="" LastModificationDate="1598955715" Name="Page_Gestion_Offre" Objects="39" Symbols="33" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="15.1.0.2850"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -8,11 +8,11 @@
 <c:Children>
 <o:Model Id="o2">
 <a:ObjectID>84767168-913B-42B2-9B52-C3AA553732B0</a:ObjectID>
-<a:Name>Page_Gestion_Panier</a:Name>
-<a:Code>Page_Gestion_Panier</a:Code>
+<a:Name>Page_Gestion_Offre</a:Name>
+<a:Code>Page_Gestion_Offre</a:Code>
 <a:CreationDate>1588854259</a:CreationDate>
 <a:Creator>Admin</a:Creator>
-<a:ModificationDate>1598783516</a:ModificationDate>
+<a:ModificationDate>1598955715</a:ModificationDate>
 <a:Modifier>Admin</a:Modifier>
 <a:PackageOptionsText>[FolderOptions]
 
@@ -981,11 +981,11 @@ NameToCode=No</a:ModelOptionsText>
 <c:SequenceDiagrams>
 <o:SequenceDiagram Id="o5">
 <a:ObjectID>ED1BAA4B-5069-4D07-9947-348D5BCBA2C1</a:ObjectID>
-<a:Name>Page Panier</a:Name>
-<a:Code>Page_Panier</a:Code>
+<a:Name>Page Offre</a:Name>
+<a:Code>Page_Offre</a:Code>
 <a:CreationDate>1588854259</a:CreationDate>
 <a:Creator>Admin</a:Creator>
-<a:ModificationDate>1598783544</a:ModificationDate>
+<a:ModificationDate>1598955681</a:ModificationDate>
 <a:Modifier>Admin</a:Modifier>
 <a:DisplayPreferences>[DisplayPreferences]
 
