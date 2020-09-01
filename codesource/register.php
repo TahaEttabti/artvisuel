@@ -29,9 +29,14 @@ if(isset($_POST['submit'])){
 
 
 ?>
+<style>
+div#lien {
+  font-size: 2rem;
+}
+</style>
 
 <div class="container-fluid">
-    <div class="row" style="margin:2% auto">
+    <div class="row" style="margin: 2% auto; width: 100%;">
         <div class="col-md-5 mx-auto p-3">
             <?php if(isset($_GET['message']) && $_GET['message']== 'error'): ?>
                 <div class="alert alert-danger">ce utilisateur est déjà inscrit
@@ -66,7 +71,7 @@ if(isset($_POST['submit'])){
                 </div>
             </div>
             <div class="card mt-1">
-                <div class="card-body">
+                <div class="card-body" id="lien">
                     <small>vous avez un compte<a href="login.php"> alors connecte toi </a></small>.
                 </div>
             </div>

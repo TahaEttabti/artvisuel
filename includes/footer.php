@@ -55,7 +55,12 @@
           <i class="fas fa-phone mr-3"></i> + 212 6 16 56 88 02</p>
         <p>
           <i class="fas fa-print mr-3"></i> + 212 5 24 56 88 02</p>
+        <div class="logo">
+          <a href="home.php">
+              <img id="logo" src="../images/logo-art.png">
+          </a>
         </div>
+      </div>
     </div>
     <hr>
     <div class="row d-flex align-items-center">

@@ -1,9 +1,9 @@
 <nav class="navigation-menu">
-    <!-- <div class="logo">
+    <div class="logo">
         <a href="home.php">
             <img id="logo" src="../images/logo-art.png">
         </a>
-    </div> -->
+    </div>
     <label
         class="hamburger-icon"
         aria-label="Open navigation menu"

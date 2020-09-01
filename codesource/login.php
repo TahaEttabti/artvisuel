@@ -16,16 +16,12 @@ if(isset($_POST['submit'])){
     if($rows == 1){
         $check = $res->fetch(PDO::FETCH_ASSOC);
         if($check['roles'] == 'admin'){
-            // $id= $check['idUser'];
             $admin = $check['roles']; 
             $_SESSION['admin']=$admin;
-            // $_SESSION['admid']=$id;
             header('location: ../admin/gestion-galerie/index.php');    
         } else {
-            // $id= $check['idUser']; 
             $client = $check['roles'];
             $_SESSION['user']=$client;
-            // $_SESSION['admid']=$id;
             header('location: home.php'); 
         }    
     } else{
@@ -36,9 +32,14 @@ if(isset($_POST['submit'])){
 
 
 ?>
+<style>
+div#lien {
+  font-size: 2rem;
+}
+</style>
 
-<div class="container-fluid">
-    <div class="row" style="margin:2% auto">
+<div class="container">
+    <div class="row" style="margin: 2% auto; width: 100%;">
         <div class="col-md-5 mx-auto p-3">
                 <?php if(isset($_GET['message']) && $_GET['message']== 'error'): ?>
                     <div class="alert alert-danger">votre username ou password incorrect
@@ -65,7 +66,7 @@ if(isset($_POST['submit'])){
                 </div>
             </div>
             <div class="card mt-1">
-                <div class="card-body">
+                <div class="card-body" id="lien">
                     <small>vous n'avez un compte<a href="register.php"> alors cree le </a></small>.
                 </div>
             </div>
