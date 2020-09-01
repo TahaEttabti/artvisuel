@@ -3,7 +3,6 @@
     <footer class="page-footer font-small mdb-color pt-4">
   <div class="container text-center text-md-left">
     <div class="row text-center text-md-left mt-3 pb-3">
-
       <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
         <h6 class="text-uppercase mb-4 font-weight-bold">A Propos de Nous</h6>
         <p>Design and co est dédiée aux artistes résidents marocains et étrangers, et offre aux collectionneurs et amateurs d’art au Maroc un choix varié d’œuvres d’art dans l’air du temps.</p>
@@ -55,11 +54,6 @@
           <i class="fas fa-phone mr-3"></i> + 212 6 16 56 88 02</p>
         <p>
           <i class="fas fa-print mr-3"></i> + 212 5 24 56 88 02</p>
-        <div class="logo">
-          <a href="home.php">
-              <img id="logo" src="../images/logo-art.png">
-          </a>
-        </div>
       </div>
     </div>
     <hr>
